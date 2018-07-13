@@ -46,6 +46,7 @@ namespace CustomerEx1.Controllers
         // GET: 客戶資料/Create
         public ActionResult Create()
         {
+
             return View();
         }
 
@@ -62,8 +63,11 @@ namespace CustomerEx1.Controllers
                 repo.UnitOfWork.Commit();
                 return RedirectToAction("Index");
             }
-
-            return View(客戶資料);
+            else
+            {
+                return View(ModelState.ToString());
+            }
+          //  return View(客戶資料);
         }
 
         // GET: 客戶資料/Edit/5

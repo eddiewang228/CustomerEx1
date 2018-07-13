@@ -14,6 +14,12 @@ namespace CustomerEx1.Models
     
     public partial class 客戶聯絡人
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public 客戶聯絡人()
+        {
+            this.Delmark = false;
+        }
+    
         public int Id { get; set; }
         public int 客戶Id { get; set; }
         public string 職稱 { get; set; }

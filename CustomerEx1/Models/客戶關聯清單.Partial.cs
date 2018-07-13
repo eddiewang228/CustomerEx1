@@ -17,5 +17,7 @@ namespace CustomerEx1.Models
         public string 客戶名稱 { get; set; }
         public Nullable<int> 銀行帳戶數量 { get; set; }
         public Nullable<int> 聯絡人數量 { get; set; }
+        [Required]
+        public int Id { get; set; }
     }
 }

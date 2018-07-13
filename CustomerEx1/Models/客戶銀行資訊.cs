@@ -14,6 +14,12 @@ namespace CustomerEx1.Models
     
     public partial class 客戶銀行資訊
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public 客戶銀行資訊()
+        {
+            this.Delmark = false;
+        }
+    
         public int Id { get; set; }
         public int 客戶Id { get; set; }
         public string 銀行名稱 { get; set; }

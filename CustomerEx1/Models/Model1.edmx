@@ -170,7 +170,7 @@
           <Property Name="Email" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="客戶銀行資訊" Relationship="Self.FK_客戶銀行資訊_客戶資料" FromRole="客戶資料" ToRole="客戶銀行資訊" />
           <NavigationProperty Name="客戶聯絡人" Relationship="Self.FK_客戶聯絡人_客戶資料" FromRole="客戶資料" ToRole="客戶聯絡人" />
-          <Property Name="Delmark" Type="Boolean" />
+          <Property Name="Delmark" Type="Boolean" DefaultValue="False" />
         </EntityType>
         <EntityType Name="客戶銀行資訊">
           <Key>
@@ -184,7 +184,7 @@
           <Property Name="帳戶名稱" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="帳戶號碼" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="客戶資料" Relationship="Self.FK_客戶銀行資訊_客戶資料" FromRole="客戶銀行資訊" ToRole="客戶資料" />
-          <Property Name="Delmark" Type="Boolean" />
+          <Property Name="Delmark" Type="Boolean" DefaultValue="False" />
         </EntityType>
         <EntityType Name="客戶聯絡人">
           <Key>
@@ -198,7 +198,7 @@
           <Property Name="手機" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="電話" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="客戶資料" Relationship="Self.FK_客戶聯絡人_客戶資料" FromRole="客戶聯絡人" ToRole="客戶資料" />
-          <Property Name="Delmark" Type="Boolean" />
+          <Property Name="Delmark" Type="Boolean" DefaultValue="False" />
         </EntityType>
         <EntityType Name="客戶關聯清單">
           <Key>
